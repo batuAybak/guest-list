@@ -1,0 +1,19 @@
+#root {
+  background-color: cadetblue;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+main {
+  border: solid 1px black;
+  margin: 5rem;
+  padding: 1rem;
+}
+
+.list-header {
+  text-align: center;
+}

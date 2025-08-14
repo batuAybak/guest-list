@@ -3,9 +3,10 @@ import GetDataHooks from "../hooks/GetDataHooks";
 
 export default function GuestList() {
   const { setSelectedGuest } = useGuest();
-  const { guests } = GetDataHooks(
+  const { guests, loading } = GetDataHooks(
     "https://fsa-crud-2aa9294fe819.herokuapp.com/api/2507-Batuhan/guests"
   );
+  if (loading) return <p>Loading guests...</p>;
 
   return (
     <>
